@@ -644,6 +644,11 @@ class FakeStorageRpc implements StorageRpc {
   }
 
   @Override
+  public Notification getNotification(String bucket, String notification) {
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
   public Bucket lockRetentionPolicy(Bucket bucket, Map<Option, ?> options) {
     throw new UnsupportedOperationException();
   }
